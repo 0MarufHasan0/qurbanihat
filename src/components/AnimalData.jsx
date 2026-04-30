@@ -1,5 +1,8 @@
 import React from 'react';
 import AnimalCard from './AnimalCard';
+import Link from 'next/link';
+import { Button } from '@heroui/react';
+import { FaArrowTrendUp } from 'react-icons/fa6';
 
 const AnimalData = async () => {
   const res = await fetch('https://qurbanihat-pi.vercel.app/data.json');
@@ -20,6 +23,14 @@ const AnimalData = async () => {
           <AnimalCard key={animal.id} animal={animal} />
         ))}
       </div>
+
+          <div className="flex justify-center my-10">
+            <Link href={"/animals"}>
+            <Button className="bg-green-500 text-white">
+                Browse All Animals <FaArrowTrendUp />
+               </Button>
+             </Link>
+          </div>
     </div>
   );
 };

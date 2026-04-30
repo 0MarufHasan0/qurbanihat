@@ -27,7 +27,7 @@ const AnimalCard = ({ animal }) => {
    
       <div className='p-4 space-y-3'>
         
-        <h2 className='font-semibold text-base text-gray-800'>
+        <h2 className='font-bold  text-green-600'>
           {animal?.name} - {animal?.type}
         </h2>
 
