@@ -20,7 +20,7 @@ const Banner = () => {
         
         <div className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8 text-white">
           
-         <div className=" md:ml-30 ml-3">
+         <div className=" lg:ml-30 ml-3">
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 md:mb-4 max-w-2xl leading-tight">
           Find You  Perfect <span className="text-green-500">Qurbani Animal</span> 
           </h1>

@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <header className="border-b bg-white">
-      <nav className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <nav className="max-w-8xl mx-auto px-4 py-3 flex items-center justify-between">
         
         <div className="flex items-center">
           <Image 
@@ -61,7 +61,6 @@ const Navbar = () => {
             
             </li>
         </ul>
-        
         <div className="hidden md:flex items-center gap-4 text-sm">
 
           <Link 
