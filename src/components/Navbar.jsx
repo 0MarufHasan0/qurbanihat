@@ -34,28 +34,45 @@ const Navbar = () => {
           <ul className="hidden md:flex items-center gap-6 text-sm">
           <li className="text-gray-500 font-medium">
 
-            <Navlinks href={"/"}>Home</Navlinks>
+            <Navlinks href={"/"}>
+
+            Home
+            
+            </Navlinks>
             
             </li>
           <li className="text-gray-500 font-medium">
             
-            <Navlinks href={"/animals"}>All Animals</Navlinks>
+            <Navlinks href={"/animals"}>
+            
+            All Animals
+            
+            </Navlinks>
             
             </li>
+
           <li className="text-gray-500 font-medium">
             
-            <Navlinks href={"/profile"}>Profile</Navlinks>
+            <Navlinks href={"/profile"}>
+            
+            Profile
+            
+            </Navlinks>
             
             </li>
         </ul>
+        
         <div className="hidden md:flex items-center gap-4 text-sm">
-          <Link href="/signin"  className="bg-green-700 text-white px-4 py-1.5 rounded-md hover:bg-gray-800">
+
+          <Link 
+          href="/signin"  
+          className="bg-green-700 text-white px-4 py-1.5 rounded-md hover:bg-gray-800">
             Sign In
           </Link>
+
           <Link
             href="/signup"
-            className="bg-green-700  text-white px-4 py-1.5 rounded-md hover:bg-gray-800"
-          >
+            className="bg-green-700  text-white px-4 py-1.5 rounded-md hover:bg-gray-800">
             Sign Up
           </Link>
         </div>
@@ -64,8 +81,7 @@ const Navbar = () => {
 
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-2xl"
-        >
+          className="md:hidden text-2xl">
           {open ? <IoMdCloseCircle /> : <RiMenu3Fill />}
         </button>
       </nav>
@@ -95,8 +111,7 @@ const Navbar = () => {
           <Link
             href="/signup"
             onClick={closeMenu}
-            className="bg-green-700 text-white px-4 py-2 rounded-md text-center"
-          >
+            className="bg-green-700 text-white px-4 py-2 rounded-md text-center">
             Sign Up
           </Link>
         </div>
