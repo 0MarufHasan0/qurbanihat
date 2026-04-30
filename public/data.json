@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Deshi Shahi Cow",
+    "type": "Cow",
+    "breed": "Local Deshi",
+    "price": 125000,
+    "weight": 290,
+    "age": 3,
+    "location": "Bogura",
+    "description": "Healthy deshi cow suitable for Qurbani. Raised on natural food and fully halal.",
+    "image": "https://i.postimg.cc/example-cow1.jpg",
+    "category": "Large Animal"
+  },
+  {
+    "id": 2,
+    "name": "Black Bengal Goat",
+    "type": "Goat",
+    "breed": "Black Bengal",
+    "price": 38000,
+    "weight": 30,
+    "age": 2,
+    "location": "Meherpur",
+    "description": "Premium Black Bengal goat, perfect for Qurbani. Healthy and halal certified.",
+    "image": "https://i.postimg.cc/example-goat1.jpg",
+    "category": "Small Animal"
+  },
+  {
+    "id": 3,
+    "name": "Rajshahi Dairy Cow",
+    "type": "Cow",
+    "breed": "Holstein Cross",
+    "price": 185000,
+    "weight": 360,
+    "age": 4,
+    "location": "Rajshahi",
+    "description": "Strong dairy cow, healthy and suitable for Qurbani sacrifice.",
+    "image": "https://i.postimg.cc/example-cow2.jpg",
+    "category": "Large Animal"
+  },
+  {
+    "id": 4,
+    "name": "Sylhet Mountain Goat",
+    "type": "Goat",
+    "breed": "Local Hill Breed",
+    "price": 45000,
+    "weight": 35,
+    "age": 3,
+    "location": "Sylhet",
+    "description": "Naturally raised mountain goat, fully halal and healthy for Qurbani.",
+    "image": "https://i.postimg.cc/example-goat2.jpg",
+    "category": "Small Animal"
+  },
+  {
+    "id": 5,
+    "name": "Deshi River Buffalo",
+    "type": "Buffalo",
+    "breed": "Local Riverine",
+    "price": 160000,
+    "weight": 450,
+    "age": 5,
+    "location": "Kushtia",
+    "description": "Strong river buffalo, well-fed and suitable for halal Qurbani.",
+    "image": "https://i.postimg.cc/example-buffalo1.jpg",
+    "category": "Large Animal"
+  },
+  {
+    "id": 6,
+    "name": "Kashmiri Sheep",
+    "type": "Sheep",
+    "breed": "Kashmiri Wool Sheep",
+    "price": 55000,
+    "weight": 40,
+    "age": 2,
+    "location": "Chattogram",
+    "description": "Healthy Kashmiri sheep, perfect halal animal for Qurbani sacrifice.",
+    "image": "https://i.postimg.cc/example-sheep1.jpg",
+    "category": "Small Animal"
+  }
+]
