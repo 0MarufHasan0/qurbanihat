@@ -15,15 +15,16 @@ const Banner = () => {
 >
       {/* Overlay */}
       <div className="w-full h-full rounded-lg bg-black/50 flex items-center">
+ 
 
       {/* Content text */}
         
         <div className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8 text-white">
           
          <div className=" lg:ml-30 ml-3">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 md:mb-4 max-w-2xl leading-tight">
-          Find You  Perfect <span className="text-green-500">Qurbani Animal</span> 
-          </h1>
+         <h1 className="text-2xl  sm:text-3xl md:text-5xl font-bold mb-3 md:mb-4 max-w-2xl leading-tight">
+  Find Your Perfect <span className="text-green-500">Qurbani Animal</span>
+</h1>
 
           <p className="text-sm sm:text-base md:text-xl mb-5 md:mb-6 max-w-xl text-gray-200">
             Buy  healthy and beautiful animals from trusted sellers around you

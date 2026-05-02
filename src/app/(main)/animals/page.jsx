@@ -1,7 +1,10 @@
 import AnimalCard from '@/components/AnimalCard';
 import React from 'react';
 
-
+export const metadata = {
+  title: "Qurbani Hat | All Animals",
+ 
+};
 
 const AllAnimal = async () => {
   const res = await fetch('https://qurbanihat-pi.vercel.app/data.json');

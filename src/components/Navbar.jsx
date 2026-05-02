@@ -66,13 +66,13 @@ const Navbar = () => {
           <Link 
           href="/signin"  
           className="bg-green-700 text-white px-4 py-1.5 rounded-md hover:bg-gray-800">
-            Sign In
+            Login
           </Link>
 
           <Link
             href="/signup"
             className="bg-green-700  text-white px-4 py-1.5 rounded-md hover:bg-gray-800">
-            Sign Up
+           Register
           </Link>
         </div>
 
@@ -104,14 +104,14 @@ const Navbar = () => {
         </Link>
         <div className="border-t pt-2 flex flex-col gap-2">
           <Link href="/signin"  onClick={closeMenu}>
-            Sign In
+            Login
           </Link>
 
           <Link
             href="/signup"
             onClick={closeMenu}
             className="bg-green-700 text-white px-4 py-2 rounded-md text-center">
-            Sign Up
+            Register
           </Link>
         </div>
       </div>

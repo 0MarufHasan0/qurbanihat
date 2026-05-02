@@ -11,6 +11,7 @@ import {
   TextArea,
   TextField,
 } from "@heroui/react";
+import { toast } from "react-toastify";
 
 export default function BookingFrom({animal}) {
 
@@ -26,10 +27,12 @@ export default function BookingFrom({animal}) {
 
     // console.log(data);
     e.target.reset();
+       toast.success("Booking Successful 🎉");
   };
 
   return (
     <Card className="border w-full max-w-md mx-auto p-5 md:p-8 mt-5">
+    
 
       <h1 className="text-center text-xl md:text-2xl font-bold mb-4">
        Secure Your <span className="text-green-700">Qurbani</span> – {animal.name} Booking  
@@ -67,7 +70,7 @@ export default function BookingFrom({animal}) {
         <div className="flex flex-col sm:flex-row gap-2">
           <Button type="submit" className="w-full">
             <Check />
-            Submit
+            Booking Now
           </Button>
 
           <Button type="reset" variant="secondary" className="w-full">

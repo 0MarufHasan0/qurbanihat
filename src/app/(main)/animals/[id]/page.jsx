@@ -44,7 +44,7 @@ const page = async ({ params }) => {
             <div className="p-4 space-y-2">
               <h2 className="font-bold text-green-600">
 
-                {animal?.name} - {animal?.type}
+                {animal?.name}
 
               </h2>
 
@@ -53,6 +53,39 @@ const page = async ({ params }) => {
               </p>
 
              <div className='flex flex-col sm:flex-row gap-2 sm:items-center'>
+
+  <p className='flex font-bold items-center gap-1'>
+    Type :
+    <span className="text-green-600 font-semibold">
+      {animal?.type}
+    </span>
+  </p>
+
+  <Separator orientation='vertical' className="hidden sm:block" />
+
+  <p className='font-bold'>
+    Breed :
+    <span className="text-green-600 px-1 font-semibold">
+      {animal?.breed}
+    </span>
+  </p>
+
+  
+
+</div> 
+
+<Separator orientation='horizontal' className="hidden sm:block" />
+
+  <p className='flex font-bold items-center gap-1' >
+    Origin :
+    <span className="text-green-600 px-1 font-semibold">
+      {animal?.origin}
+    </span>
+  </p>
+
+  <Separator orientation='horizontal' className="hidden sm:block" />
+
+  <div className='flex mt-2 flex-col sm:flex-row gap-2 sm:items-center'>
 
   <p className='flex font-bold items-center gap-1'>
     <GiWeight /> weight :
@@ -81,6 +114,39 @@ const page = async ({ params }) => {
 
 </div>
 
+<Separator orientation='horizontal' className="hidden sm:block" />
+
+ <div className='flex mt-2 flex-col sm:flex-row gap-2 sm:items-center'>
+
+  <p className='flex font-bold items-center gap-1'>
+   Feeding :
+    <span className="text-green-600 font-semibold">
+      {animal?.feedingType}
+    </span>
+  </p>
+
+  <Separator orientation='vertical' className="hidden sm:block" />
+
+  <p className='font-bold'>
+   health :
+    <span className="text-green-600 px-1 font-semibold">
+      {animal?.healthStatus}
+    </span>
+  </p>
+
+ 
+
+</div>
+
+ <Separator orientation='horizontal' className="hidden sm:block" />
+
+  <p className='flex font-bold items-center gap-1' >
+    Delivery Available :
+    <span className="text-green-600 px-1 font-semibold">
+      {animal?.deliveryAvailable}
+    </span>
+  </p>
+
               <p className="text-green-600 font-bold text-lg">
                 ৳ {animal?.price} Taka
               </p>
@@ -97,5 +163,6 @@ const page = async ({ params }) => {
     </div>
   );
 };
+
 
 export default page;

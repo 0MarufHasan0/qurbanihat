@@ -3,6 +3,7 @@ import AnimalCard from './AnimalCard';
 import Link from 'next/link';
 import { Button } from '@heroui/react';
 import { FaArrowTrendUp } from 'react-icons/fa6';
+import Marquee from 'react-fast-marquee';
 
 const AnimalData = async () => {
   const res = await fetch('https://qurbanihat-pi.vercel.app/data.json');
@@ -14,6 +15,8 @@ const AnimalData = async () => {
 
   return (
     <div>
+
+        
       <h1 className='text-center text-xl md:text-2xl  font-bold mt-15'>
         <span className='text-green-700'>Qurbani Haat</span> – Buy Healthy Animals for Eid
       </h1>
