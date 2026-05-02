@@ -8,9 +8,13 @@
     "weight": 290,
     "age": 3,
     "location": "Bogura",
-    "description": "Healthy deshi cow suitable for Qurbani. Raised on natural food and fully halal.",
-    "photo": "https://i.postimg.cc/vm6FKLNj/Deshi_Shahi_Cow.jpg",
-    "category": "Large Animal"
+    "origin": "Bangladesh Farm Raised",
+    "healthStatus": "Excellent",
+    "feedingType": "Natural Grass + Organic Feed",
+    "deliveryAvailable": "Yes",
+    "category": "Large Animal",
+    "description": "Premium healthy deshi cow raised in natural environment with proper care and hygiene. Perfect for Qurbani.",
+    "photo": "https://i.postimg.cc/vm6FKLNj/Deshi_Shahi_Cow.jpg"
   },
   {
     "id": 2,
@@ -21,9 +25,13 @@
     "weight": 30,
     "age": 2,
     "location": "Meherpur",
-    "description": "Premium Black Bengal goat, perfect for Qurbani. Healthy and halal certified.",
-    "photo": "https://i.postimg.cc/CLY8LcHY/Black_Bengal_Goat.jpg",
-    "category": "Small Animal"
+    "origin": "Local Farm",
+    "healthStatus": "Excellent",
+    "feedingType": "Natural Grass",
+    "deliveryAvailable": "Yes",
+    "category": "Small Animal",
+    "description": "Premium Black Bengal goat, healthy and perfect for Qurbani sacrifice.",
+    "photo": "https://i.postimg.cc/CLY8LcHY/Black_Bengal_Goat.jpg"
   },
   {
     "id": 3,
@@ -34,22 +42,30 @@
     "weight": 360,
     "age": 4,
     "location": "Rajshahi",
-    "description": "Strong dairy cow, healthy and suitable for Qurbani sacrifice.",
-    "photo": "https://i.postimg.cc/vBf1Gncp/Rajshahi_Dairy_Cow.jpg",
-    "category": "Large Animal"
+    "origin": "Dairy Farm",
+    "healthStatus": "Excellent",
+    "feedingType": "Balanced Feed + Grass",
+    "deliveryAvailable": "Yes",
+    "category": "Large Animal",
+    "description": "Strong dairy cow with excellent health and ideal Qurbani condition.",
+    "photo": "https://i.postimg.cc/vBf1Gncp/Rajshahi_Dairy_Cow.jpg"
   },
   {
     "id": 4,
     "name": "Sylhet Mountain Goat",
     "type": "Goat",
-    "breed": "Local Hill Breed",
+    "breed": "Hill Breed",
     "price": 45000,
     "weight": 35,
     "age": 3,
     "location": "Sylhet",
-    "description": "Naturally raised mountain goat, fully halal and healthy for Qurbani.",
-    "photo": "https://i.postimg.cc/YC0hhZv4/Sylhet_Mountain_Goat.jpg",
-    "category": "Small Animal"
+    "origin": "Hill Farm",
+    "healthStatus": "Very Good",
+    "feedingType": "Natural Grass",
+    "deliveryAvailable": "Yes",
+    "category": "Small Animal",
+    "description": "Naturally raised mountain goat with strong health and premium quality.",
+    "photo": "https://i.postimg.cc/YC0hhZv4/Sylhet_Mountain_Goat.jpg"
   },
   {
     "id": 5,
@@ -60,21 +76,29 @@
     "weight": 450,
     "age": 5,
     "location": "Kushtia",
-    "description": "Strong river buffalo, well-fed and suitable for halal Qurbani.",
-    "photo": "https://i.postimg.cc/vTXZmtbG/Deshi_River_Buffalo.jpg",
-    "category": "Large Animal"
+    "origin": "River Farm",
+    "healthStatus": "Excellent",
+    "feedingType": "Natural Grass + Water Feeding",
+    "deliveryAvailable": "Yes",
+    "category": "Large Animal",
+    "description": "Strong and healthy river buffalo suitable for Qurbani sacrifice.",
+    "photo": "https://i.postimg.cc/vTXZmtbG/Deshi_River_Buffalo.jpg"
   },
   {
     "id": 6,
     "name": "Kashmiri Sheep",
     "type": "Sheep",
-    "breed": "Kashmiri Wool Sheep",
+    "breed": "Kashmiri Wool",
     "price": 55000,
     "weight": 40,
     "age": 2,
     "location": "Chattogram",
-    "description": "Healthy Kashmiri sheep, perfect halal animal for Qurbani sacrifice.",
-    "photo": "https://i.postimg.cc/sf0F3LRZ/Kashmiri-Sheep.jpg",
-    "category": "Small Animal"
+    "origin": "Imported Breed Farm",
+    "healthStatus": "Excellent",
+    "feedingType": "Organic Feed",
+    "deliveryAvailable": "Yes",
+    "category": "Small Animal",
+    "description": "Premium Kashmiri sheep with soft wool and healthy condition for Qurbani.",
+    "photo": "https://i.postimg.cc/sf0F3LRZ/Kashmiri-Sheep.jpg"
   }
 ]
