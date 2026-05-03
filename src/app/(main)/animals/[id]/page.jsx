@@ -23,7 +23,7 @@ const page = async ({ params }) => {
     <div className="p-4 md:p-10">
       <Card className="border p-4 md:p-10 max-w-6xl mx-auto">
 
-        <h1 className="text-center font-bold text-xl md:text-2xl mb-6">
+        <h1 className="text-center font-bold text-[15px] md:text-2xl mb-6">
           Meet Your Premium <span className="text-green-700">Qurbani</span> {animal.type}
         </h1>
 

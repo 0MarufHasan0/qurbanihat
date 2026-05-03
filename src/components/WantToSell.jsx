@@ -11,6 +11,7 @@ import {
   TextArea,
   TextField,
 } from "@heroui/react";
+import { BsCloudUpload } from "react-icons/bs";
 import { FaHandPointRight } from "react-icons/fa6";
 import { toast } from "react-toastify";
 
@@ -32,16 +33,43 @@ export default function BookingFrom() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6 min-h-screen p-4">
 
-    
-      <div className="flex items-center  justify-center">
-      <div className=" animate-bounce hidden md:flex gap-3 items-center">
-          <FaHandPointRight className="text-3xl"/>
-          <h2 className="text-2xl   gap-2 md:text-3xl font-bold text-green-700 text-center lg:text-left leading-tight">
+    <div className="mt-30" >
+
+
+        <div className=" mb-10  animate-bounce  justify-center  flex gap-3 items-center">
+          <FaHandPointRight className="text-3xl hidden md:flex"/>
+          <h2 className="text-xl   gap-2 md:text-3xl font-bold text-green-700 text-center lg:text-left leading-tight">
         Want To Sell Your Qurbani Animals
         </h2>
       </div>
+
+    <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6  p-4">
+
+
+
+    
+      <div className="flex items-center  justify-center">
+    
+
+
+          <Card className="h-96  border-2 border-dashed border-green-600 rounded-2xl p-10 flex items-center justify-center bg-green-700/10 hover:bg-green-50 transition cursor-pointer">
+
+      <div className="flex flex-col items-center justify-center text-center space-y-4">
+
+        <BsCloudUpload size={70} color="#3B82F6" />
+
+        <p className="text-lg font-semibold text-gray-700">
+          Upload your Animal Image
+        </p>
+
+        <p className="text-sm text-gray-500">
+          Click or drag & drop to upload
+        </p>
+
+      </div>
+
+    </Card>
       </div>
 
    
@@ -100,6 +128,7 @@ export default function BookingFrom() {
         </Card>
       </div>
 
+    </div>
     </div>
   );
 }

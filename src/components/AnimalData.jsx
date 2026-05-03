@@ -17,7 +17,7 @@ const AnimalData = async () => {
     <div>
 
         
-      <h1 className='text-center text-xl md:text-2xl  font-bold mt-15'>
+      <h1 className='text-center text-[15px] md:text-2xl  font-bold mt-15'>
         <span className='text-green-700'>Qurbani Haat</span> – Buy Healthy Animals for Eid
       </h1>
 

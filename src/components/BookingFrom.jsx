@@ -31,7 +31,7 @@ export default function BookingFrom({animal}) {
   };
 
   return (
-    <Card className="border w-full max-w-md mx-auto p-5 md:p-8 mt-5">
+    <Card className="border  w-full max-w-md mx-auto p-5 md:p-8 mt-5">
     
 
       <h1 className="text-center text-xl md:text-2xl font-bold mb-4">
