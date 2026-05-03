@@ -64,7 +64,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-4 text-sm">
 
           <Link 
-          href="/signin"  
+          href="/login"  
           className="bg-green-700 text-white px-4 py-1.5 rounded-md hover:bg-gray-800">
             Login
           </Link>
@@ -103,7 +103,7 @@ const Navbar = () => {
           Profile
         </Link>
         <div className="border-t pt-2 flex flex-col gap-2">
-          <Link href="/signin"  onClick={closeMenu}>
+          <Link href="/login"  onClick={closeMenu}>
             Login
           </Link>
 
