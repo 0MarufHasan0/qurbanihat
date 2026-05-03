@@ -46,7 +46,7 @@ export default function BookingFrom() {
 
    
       <div className="flex justify-center">
-        <Card className="border w-full max-w-md p-5 md:p-8 shadow-sm hover:shadow-lg transition-all duration-300">
+        <Card className="border bg-green-700/10 w-full max-w-md p-5 md:p-8 shadow-sm hover:shadow-lg transition-all duration-300">
 
           <h1 className="text-center text-xl md:text-2xl font-bold mb-4">
             Secure Your <span className="text-green-700">Qurbani</span> Booking
