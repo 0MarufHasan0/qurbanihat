@@ -5,6 +5,12 @@ import React from 'react';
 import { GiWeight } from 'react-icons/gi';
 import { IoLocation } from 'react-icons/io5';
 
+export async function generateMetadata({ params }) {
+  return {
+    title: `Qurbani Hat - Animal ${params.id}`,
+  };
+}
+
 const page = async ({ params }) => {
   const { id } = await params;
 

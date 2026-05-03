@@ -1,7 +1,8 @@
 
-import AnimalCard from "@/components/AnimalCard";
+
 import AnimalData from "@/components/AnimalData";
 import Banner from "@/components/Banner";
+import GuideQuarbani from "@/components/GuideQuarbani";
 import Marque from "@/components/Marque";
 
 
@@ -14,6 +15,7 @@ export default function Home() {
    <Banner/>
    <Marque/>
    <AnimalData/>
+   <GuideQuarbani/>
    
    
    </>
