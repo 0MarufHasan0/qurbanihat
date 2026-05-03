@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 🐄 Qurbani Hat – Premium Livestock Marketplace
 
-## Getting Started
+Qurbani Hat is a modern, high-performance web application designed to simplify the buying and selling of sacrificial animals for Eid-ul-Adha.
 
-First, run the development server:
+Built with Next.js, HeroUI, and Better Auth, it delivers a fast, secure, and visually engaging user experience with smooth animations.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🌐 Live Demo
+🔗https://qurbanihat-pi.vercel.app/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
+🐄 Livestock Marketplace
+Browse cows, goats, sheep, and buffalo
+Detailed information:
+- Weight
+- Breed
+- Age
+- Health status
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Clean and modern card-based UI
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🔐 Authentication System (Better Auth)
 
-## Learn More
+- Secure User Registration & Login
+- Powered by Better Auth
+- Session-based authentication
+-Improved security and scalability
 
-To learn more about Next.js, take a look at the following resources:
+🔒 Protected Routes
+ Private sections are restricted
+ Users must login/register to access:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Profile page
+- View Details Page
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+👤 User Profile Management
 
-## Deploy on Vercel
+Users can easily update:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Profile picture 🖼️
+- Name
+- Email
+## Clean and simple profile management system
+📦 Booking System
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Easy-to-use booking form
+Real-time validation with React Hook Form
+Instant feedback via notifications
+
+## 🎨 Modern UI & Animations
+
+Built with HeroUI (NextUI)
+Smooth animations using:
+React Spring
+Framer Motion
+Interactive hover effects for premium feel
+
+## 🔔 Notifications
+
+Integrated React-Toastify
+
+Displays:
+Booking success
+Login/Register status
+Error messages
+
+## 📱 Fully Responsive Design
+
+Optimized for all devices:
+Mobile 📱
+Tablet 💻
+Desktop 🖥️
+
+## 🚀 Tech Stack
+
+Framework: Next.js (App Router)
+Authentication: Better Auth
+UI Library: HeroUI (NextUI)
+Styling: Tailwind CSS
+Animations: React Spring 
+Icons: React Icons
+Forms: React Hook Form
+Notifications: React-Toastify
+
+## 🧠 Key Highlights
+
+⚡ Fast and optimized performance
+🔒 Secure authentication with Better Auth
+🎯 Real-world problem-solving project
+🎨 Clean and premium UI/UX
+✨ Smooth and engaging animations
