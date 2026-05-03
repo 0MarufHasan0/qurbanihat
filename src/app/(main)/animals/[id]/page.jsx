@@ -109,7 +109,11 @@ const page = async ({ params }) => {
     </span>
   </p>
 
-  <Separator orientation='vertical' className="hidden sm:block" />
+  
+
+</div>
+
+<Separator orientation='horizontal' className="hidden sm:block" />
 
   <p className='flex font-bold items-center gap-1' >
     <IoLocation /> Location :
@@ -118,11 +122,9 @@ const page = async ({ params }) => {
     </span>
   </p>
 
-</div>
-
 <Separator orientation='horizontal' className="hidden sm:block" />
 
- <div className='flex mt-2 flex-col sm:flex-row gap-2 sm:items-center'>
+
 
   <p className='flex font-bold items-center gap-1'>
    Feeding :
@@ -131,7 +133,12 @@ const page = async ({ params }) => {
     </span>
   </p>
 
-  <Separator orientation='vertical' className="hidden sm:block" />
+  
+ 
+
+
+
+<Separator orientation='horizontal' className="hidden sm:block" />
 
   <p className='font-bold'>
    health :
@@ -140,9 +147,6 @@ const page = async ({ params }) => {
     </span>
   </p>
 
- 
-
-</div>
 
  <Separator orientation='horizontal' className="hidden sm:block" />
 
