@@ -6,9 +6,12 @@ import { useForm } from "react-hook-form";
 import { authClient } from "@/lib/auth-client";
 import { toast } from "react-toastify";
 import Link from "next/link";
+import { Router } from "next/router";
+import { useRouter } from "next/navigation";
 
 export default function RegisterPage() {
   const { register, handleSubmit, reset, formState: {errors} } = useForm();
+    const router = useRouter();
 
   const onSubmit = async (data) => {
     // console.log(data);
@@ -21,7 +24,8 @@ export default function RegisterPage() {
     email: email, // required
     password: password, // required
     image: photo,
-    callbackURL: "/login",
+    createSession: false 
+   
 });
 
 // console.log(data,error)
@@ -31,7 +35,12 @@ if (error) {
 }
 
 if(res){
-  toast.success("Registration Successful 🎉");
+   await authClient.signOut();
+
+      toast.success("Registration Successful 🎉");
+      reset();
+
+      router.push("/login");
 }
 
   };

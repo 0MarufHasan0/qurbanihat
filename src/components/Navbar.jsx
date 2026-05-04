@@ -8,11 +8,29 @@ import { IoMdCloseCircle } from "react-icons/io";
 import logo from '@/assest/logo.png'
 import Navlinks from "./Navlinks";
 import { authClient } from "@/lib/auth-client";
+import { Avatar, Button } from "@heroui/react";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const { data: session } = authClient.useSession()
   // console.log(session,"session")
   const user = session?.user
+
+  console.log(user)
+
+    const router = useRouter();
+
+  const handleSignOut = async()=>{
+
+    await authClient.signOut({
+  fetchOptions: {
+    onSuccess: () => {
+      router.push("/login"); // redirect to login page
+    },
+  },
+});
+
+  }
    
     //  Responsive
   const [open, setOpen] = useState(false);
@@ -65,9 +83,14 @@ const Navbar = () => {
             
             </li>
         </ul>
+        
         <div className="hidden md:flex items-center gap-4 text-sm">
 
-          <Link 
+         {
+
+          !user && ( <div className="flex gap-4">
+
+              <Link 
           href="/login"  
           className="bg-green-700 text-white px-4 py-1.5 rounded-md hover:bg-gray-800">
             Login
@@ -78,6 +101,28 @@ const Navbar = () => {
             className="bg-green-700  text-white px-4 py-1.5 rounded-md hover:bg-gray-800">
            Register
           </Link>
+
+
+
+          </div>
+
+         )}
+
+         {
+          user && ( <div className="flex gap-4">
+
+              <Avatar>
+        <Avatar.Image alt={user?.name} src={user?.image} />
+        <Avatar.Fallback>{user?.name.charAt[0]}</Avatar.Fallback>
+      </Avatar>
+      
+
+      <Button className="bg-green-700 text-white" onClick={handleSignOut}>SignOut</Button>
+
+
+          </div>
+         )}
+        
         </div>
 
         {/* Responsive button toggle */}
@@ -107,7 +152,10 @@ const Navbar = () => {
           Profile
         </Link>
         <div className="border-t pt-2 flex flex-col gap-2">
-          <Link href="/login"  onClick={closeMenu}>
+         {!user &&(
+
+         <div className="flex flex-col gap-2">
+            <Link href="/login"  onClick={closeMenu}>
             Login
           </Link>
 
@@ -117,6 +165,16 @@ const Navbar = () => {
             className="bg-green-700 text-white px-4 py-2 rounded-md text-center">
             Register
           </Link>
+
+          </div>
+         )}
+
+         {user && (<div> 
+
+           <Link href="/login"  onClick={closeMenu}>
+            SignOut
+          </Link>
+         </div>)}
         </div>
       </div>
     </header>
