@@ -4,6 +4,8 @@ import { FaGoogle } from "react-icons/fa6";
 import { Check } from "@gravity-ui/icons";
 import { useForm } from "react-hook-form";
 import { authClient } from "@/lib/auth-client";
+import { toast } from "react-toastify";
+import Link from "next/link";
 
 export default function RegisterPage() {
   const { register, handleSubmit, reset, formState: {errors} } = useForm();
@@ -22,7 +24,15 @@ export default function RegisterPage() {
     callbackURL: "/login",
 });
 
-console.log(data,error)
+// console.log(data,error)
+
+if (error) {
+  toast.warning(error?.message || "Registration failed");
+}
+
+if(res){
+  toast.success("Registration Successful 🎉");
+}
 
   };
 
@@ -84,6 +94,12 @@ console.log(data,error)
             Reset
           </Button>
         </form>
+        <p>
+            Already have an account?{" "}
+          <Link href="/login" className="text-blue-500 underline">
+                Login
+           </Link>
+                </p>
 
 
       </Card>

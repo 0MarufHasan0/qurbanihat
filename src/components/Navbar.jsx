@@ -7,8 +7,12 @@ import { RiMenu3Fill } from "react-icons/ri";
 import { IoMdCloseCircle } from "react-icons/io";
 import logo from '@/assest/logo.png'
 import Navlinks from "./Navlinks";
+import { authClient } from "@/lib/auth-client";
 
 const Navbar = () => {
+  const { data: session } = authClient.useSession()
+  // console.log(session,"session")
+  const user = session?.user
    
     //  Responsive
   const [open, setOpen] = useState(false);

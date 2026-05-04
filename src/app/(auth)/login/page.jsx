@@ -3,16 +3,46 @@ import { Card, Input, Button, Label } from "@heroui/react";
 import { FaGoogle } from "react-icons/fa6";
 import { Check } from "@gravity-ui/icons";
 import { useForm } from "react-hook-form";
+import { email } from "better-auth";
+import { authClient } from "@/lib/auth-client";
+import { toast } from "react-toastify";
+import Link from "next/link";
 
 export default function LoginPage() {
   const { register, handleSubmit, reset, formState: {errors} } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async(data) => {
+    // console.log(data);
+    const { data:res, error } = await authClient.signIn.email({
+    email: data.email ,// required
+    password: data.password, // required
+    rememberMe: true,
+    callbackURL: "/",
+});
+
+if(error){
+   toast.warning(error?.message || "login failed");
+   return
+}
+
+if(res){
+toast.success("login Successful 🎉");
+
+}
+
   };
 
-  const handleGoogleLogin = () => {
-    console.log("Google login clicked");
+  const handleGoogleLogin =async () => {
+      const data = await authClient.signIn.social({
+    provider: "google",
+  });
+   if (data?.error) {
+      toast.error(data.error?.message );
+      return;
+    }
+
+       toast.success("Login successful with Google 🎉");
+    
   };
 
   return (
@@ -60,6 +90,11 @@ export default function LoginPage() {
             Reset
           </Button>
         </form>
+        <p>Don't have an account?{" "}
+        <Link href="/register" className="text-blue-500 underline">
+    Register
+        </Link>
+        </p>
 
 
         <p className="text-center my-4 text-gray-400">or</p>
