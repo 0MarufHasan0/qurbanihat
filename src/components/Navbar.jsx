@@ -70,7 +70,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            href="/signup"
+            href="/register"
             className="bg-green-700  text-white px-4 py-1.5 rounded-md hover:bg-gray-800">
            Register
           </Link>
@@ -108,7 +108,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            href="/signup"
+            href="/register"
             onClick={closeMenu}
             className="bg-green-700 text-white px-4 py-2 rounded-md text-center">
             Register

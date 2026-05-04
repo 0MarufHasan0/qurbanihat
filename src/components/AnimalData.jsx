@@ -1,9 +1,10 @@
+
 import React from 'react';
 import AnimalCard from './AnimalCard';
 import Link from 'next/link';
 import { Button } from '@heroui/react';
 import { FaArrowTrendUp } from 'react-icons/fa6';
-import Marquee from 'react-fast-marquee';
+
 
 const AnimalData = async () => {
   const res = await fetch('https://qurbanihat-pi.vercel.app/data.json');
