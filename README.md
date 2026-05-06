@@ -107,3 +107,9 @@ Desktop 🖥️
 🎯 Real-world problem-solving project
 🎨 Clean and premium UI/UX
 ✨ Smooth and engaging animations
+
+### 📦 NPM Packages Used
+
+Next.js • React • Tailwind CSS • HeroUI • Better Auth • MongoDB
+React Hook Form • React Toastify • Framer Motion • React Spring
+React Icons • Gravity UI Icons • React Fast Marquee
