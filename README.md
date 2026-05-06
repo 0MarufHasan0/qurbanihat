@@ -70,16 +70,35 @@ Mobile 📱
 Tablet 💻
 Desktop 🖥️
 
-## 🚀 Tech Stack
+## 📦 Tech Stack
 
-Framework: Next.js (App Router)
-Authentication: Better Auth
-UI Library: HeroUI (NextUI)
-Styling: Tailwind CSS
-Animations: React Spring 
-Icons: React Icons
-Forms: React Hook Form
-Notifications: React-Toastify
+### 🚀 Core
+- Next.js 16
+- React 19
+
+### 🎨 UI
+- Tailwind CSS
+- HeroUI
+
+### 🔐 Auth & DB
+- Better Auth
+- MongoDB
+
+### 📋 Forms
+- React Hook Form
+
+### 🎬 Animations
+- React Spring
+
+### 🔔 Notifications
+- React Toastify
+
+### 🎯 Icons
+- React Icons
+- Gravity UI Icons
+
+### ✨ Extras
+- React Fast Marquee
 
 ## 🧠 Key Highlights
 
