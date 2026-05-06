@@ -1,14 +1,16 @@
 "use client";
 import { Card, Input, Button, Label } from "@heroui/react";
-import { FaGoogle } from "react-icons/fa6";
+import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa6";
 import { Check } from "@gravity-ui/icons";
 import { useForm } from "react-hook-form";
 import { email } from "better-auth";
 import { authClient } from "@/lib/auth-client";
 import { toast } from "react-toastify";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function LoginPage() {
+    const [isShowing, setIsShowing] = useState(false);
   const { register, handleSubmit, reset, formState: {errors} } = useForm();
 
   const onSubmit = async(data) => {
@@ -64,14 +66,27 @@ toast.success("login Successful 🎉");
             placeholder="Enter email"
           />
 
-            <Label>Password<span className="text-red-500">*</span></Label>
+          <div className=" flex flex-col gap-1 relative">
 
+
+
+           <Label className="mb-2">Password <span className="text-red-500">*</span></Label>
+        
           <Input
             {...register("password", { required: "password is required", })}
-            type="password"
-            placeholder="Enter password"
+             type={isShowing ? "text" : "password"}
+            placeholder="Enter your password"
+            className='pr-10'
+          
           />
-          {errors.password && <p className="text-red-500">{errors.password.message}</p>}
+           <span className='absolute right-10  top-10' onClick={() => setIsShowing(!isShowing)}>
+           {isShowing ? <FaEye  /> : <FaEyeSlash />}
+
+       </span>
+         
+          {errors.password && <p className="text-red-500">{errors.password.message}</p>}            
+          </div>
+
          
  
           <Button
