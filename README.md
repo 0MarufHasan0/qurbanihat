@@ -111,5 +111,5 @@ Desktop 🖥️
 ### 📦 NPM Packages Used
 
 Next.js • React • Tailwind CSS • HeroUI • Better Auth • MongoDB
-React Hook Form • React Toastify • Framer Motion • React Spring
+• React Hook Form • React Toastify • React Spring
 React Icons • Gravity UI Icons • React Fast Marquee
