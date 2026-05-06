@@ -20,7 +20,7 @@ export default function RegisterPage() {
     // console.log(data);
     const {name, email,photo,password} = data;
 
-    const { data :res , error } = await authClient.signUp.email({
+    const { data : res , error } = await authClient.signUp.email({
 
       
     name: name, // required
